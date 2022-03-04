@@ -1,31 +1,31 @@
 def main():
     end = False
     while not end:
-        art_lay = str(input("Jakie działanie arytmetyczne mam wykonać? \n +,-,*,/,% \n"))
-        x = int(input("Wprowadź pierwszą liczbę: \n"))
-        y = int(input("Wprowadź drugą liczbę: \n"))
+        art_lay = str(input("Choose which arythmetic operation i should do? \n +,-,*,/,% \n"))
+        x = int(input("Insert first number: \n"))
+        y = int(input("Insert secound number: \n"))
 ## Pętla: wykonuj art_lay po uzyskanym wyniku
 
         if art_lay == '+':
-            print("Twój wynik to:", x + y)
+            print("Score of your count is:", x + y)
         elif art_lay == '-':
-            print("Twój wynik to:", x - y)
+            print("Score of your count is:", x - y)
         elif art_lay == '*':
-            print("Twój wynik to:", x * y)
+            print("Score of your count is:", x * y)
         elif art_lay == '/':
-            print("Twój wynik to: ", x / y)
+            print("Score of your count is: ", x / y)
         elif art_lay == '%':
-            print("Twój wynik to: ", x % y)
+            print("Score of your count is: ", x % y)
         else:
-            print("Niepoprawna operacja, zacznijmy od nowa!")
+            print("Operation Error, Let's try again!")
             return main()
-        print("\n Chcesz wykonać kolejne działanie? \n Wpisz literę t lub n")
+        print("\n Could You count again? \n If Yes press 't' if not press 'n'")
         
-        kolejne = input()
-        if kolejne == "t":
-            end = False
-        elif kolejne == "n":
-            print ("Koniec operacji!")
+        next_c = input()
+        if next_c == "t":
+            next_c = False
+        elif next_c == "n":
+            print ("End of operation!")
             break
       
 if __name__ == "__main__":
