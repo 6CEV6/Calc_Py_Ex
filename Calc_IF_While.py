@@ -4,8 +4,7 @@ def main():
         art_lay = str(input("Choose which arythmetic operation i should do? \n +,-,*,/,% \n"))
         x = int(input("Insert first number: \n"))
         y = int(input("Insert secound number: \n"))
-## Pętla: wykonuj art_lay po uzyskanym wyniku
-
+        
         if art_lay == '+':
             print("Score of your count is:", x + y)
         elif art_lay == '-':
