@@ -17,8 +17,8 @@ def main():
         elif art_lay == '%':
             print("Twój wynik to: ", x % y)
         else:
-            print("Niepoprawna operacja")
-            break
+            print("Niepoprawna operacja, zacznijmy od nowa!")
+            return main()
         print("\n Chcesz wykonać kolejne działanie? \n Wpisz literę t lub n")
         
         kolejne = input()
@@ -27,6 +27,6 @@ def main():
         elif kolejne == "n":
             print ("Koniec operacji!")
             break
-        #return main()
+      
 if __name__ == "__main__":
     main()
